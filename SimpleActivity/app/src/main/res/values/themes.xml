@@ -2,4 +2,14 @@
 <resources>
 
     <style name="Theme.SimpleActivity" parent="android:Theme.Material.Light.NoActionBar" />
+    
+<!--    <style name="MyTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryDark">@color/teal_200</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+    </style>
+    <style name="AppTextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">true</item>
+    </style>-->
 </resources>

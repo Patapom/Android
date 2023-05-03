@@ -16,6 +16,7 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
@@ -59,6 +60,14 @@ public class MainActivity extends ComponentActivity {
                 } else {
                     startRecording();
                 }
+            }
+        } );
+
+        ImageButton buttonClose = findViewById( R.id.buttonClose );
+        buttonClose.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishAffinity();   // Close the application...
             }
         } );
 
