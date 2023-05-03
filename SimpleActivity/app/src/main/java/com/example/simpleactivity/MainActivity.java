@@ -80,7 +80,6 @@ public class MainActivity extends ComponentActivity {
             if ( !Environment.isExternalStorageManager() ) {
                 Intent intent = new Intent( Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION );
                 startActivity( intent );
-                return;
             }
         }
 
@@ -90,6 +89,17 @@ public class MainActivity extends ComponentActivity {
 //       } else {
 //           startRecording();
 //       }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+//            if (Environment.isExternalStorageManager()) {
+//                createDir();
+//            }
+//        }
+        Toast.makeText( this, "onResume() called!", Toast.LENGTH_SHORT ).show();
     }
 
     // Ensures all permissions have been granted, otherwise disables the UI
